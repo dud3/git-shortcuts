@@ -2,8 +2,10 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-alias ga='git add -A . && git commit -m "update and refactor"'
+alias gc='git commit'
+alias ga='git add -A . && git commit -m "patch: comment not set"'
 alias gp='git push'
 alias gl='git pull'
-alias gap='git add -A . && git commit -m "update and refactor" && git push'
+alias gap='git add -A . && git commit -m "patch: comment not set" && git push'
+alias gs='gl && gc && gp'
 alias gc='git checkout'
